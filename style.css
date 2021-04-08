@@ -1,0 +1,143 @@
+:root{
+    /* Primary Color */
+    --cyan: hsl(179, 62%, 43%);
+    --brght_Yellow: hsl(71, 73%, 54%);
+
+    /* Neutral Color */
+    --lght_Gray: hsl(204, 43%, 93%);
+    --gry_Blue: hsl(218, 22%, 67%);
+    --bg_blue: hsl(206,47%,93%);
+
+    /* font-weights
+    Weights: 400, 700 */
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    background-color: var(--bg_blue);
+    
+}
+
+ .price_container{
+    width: 640px;
+    height: 475px;
+    margin: 165px auto 165px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.community_section{
+    background-color: white;
+    width: 100%;
+    height: 215px;
+    padding: 50px 80px 50px 40px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cyan);
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brght_Yellow);
+
+}
+
+.community_section p{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gry_Blue);
+}
+
+.subscription_section{
+    background-color: var(--cyan);
+    width: 50%;
+    height: 260px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subscription_section h2, p, span{
+    color: white;
+}
+
+.subs_price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subscription_section span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subscription_section p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subs_price p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--bg_blue);
+}
+
+.button{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 230px;
+    height: 50px;
+    background-color: var(--brght_Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.why_section{
+    color: white;
+    width: 50%;
+    height: 260px;
+    background-color: hsl(179, 52%, 54%);
+    padding: 40px 80px 40px 40px;
+}
+
+.why_section h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.why_section li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
