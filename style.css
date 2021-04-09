@@ -70,6 +70,18 @@ h2{
     color: var(--gry_Blue);
 }
 
+
+.subscription_section h2 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.subscription_section p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
 .subscription_section{
     background-color: var(--cyan);
     width: 50%;
@@ -103,8 +115,9 @@ h2{
 .subs_price p{
     font-size: 14px;
     font-weight: 300;
-    color: var(--bg_blue);
+    color: hsl(179,55%,63%);
 }
+
 
 .button{
     color: white;
@@ -119,6 +132,10 @@ h2{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.button p{
+    color: var(--bg_blue);
 }
 
 .why_section{
@@ -138,6 +155,108 @@ h2{
     list-style: none;
     font-size: 14px;
     font-weight: 300;
+    color: hsl(182,100%,85%);
 }
 
+
+.img{
+    width: 100%;
+    height: 100vh;
+    background: url(design/desktop-design.jpg);
+}
+
+@media only screen and  (max-width: 650px) {
+    
+    .price_container{
+        width: 400px;
+        
+    }
+    .community_section{
+        padding: 30px;
+    }
+
+    .community_section p{
+        font-size: 14px;
+    }
+
+    .subscription_section{
+        padding: 20px 15px;
+        justify-content: flex-start;
+    }
+
+    .subscription_section *{
+        margin-bottom: 8px;
+    }
+
+    
+    
+    .button{
+        width: 100%;
+    }
+
+    .why_section{
+        padding: 20px 15px;
+    }
+
+    .why_section li{
+        font-size: 13px;
+        margin-top: 0px;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and  (max-width: 375px) {
+    
+    .price_container{
+        width: 310px;
+        height: 725px;
+        margin: 70px 30px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+    }
+
+    .community_section{
+        height: 265px;
+        width: 100%;
+        padding: 30px 25px 30px 25px;
+    }
+
+    .subscription_section{
+        width: 100%;
+        height: 230px;
+        justify-content: space-between;
+    }
+
+    .subscription_section h2, p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    }
+
+    .button{
+        font-size: 16px;
+    }
+
+    .price{
+        margin-right: 10px;
+    }
+
+    .why_section{
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .why_section h2{
+        margin: 0px;
+    }
+
+    .why_section li{
+        font-size: 14px;
+        line-height: 1.5;
+       
+    }
+}
 
